@@ -30,5 +30,19 @@
             <h3>Explore The World</h3>
         </div>
     </div>
+    <script>
+        const panals = document.querySelectorAll('.panel');
+        panals.forEach(panel =>{
+            panel.addEventListener('click',() =>{
+                removeAddClass();
+                panel.classList.add('active');
+            })
+        })
+        function removeAddClass(){
+            panals.forEach(panel => {
+                panel.classList.remove('active');
+            })
+        }
+    </script>
 </body>
 </html>
